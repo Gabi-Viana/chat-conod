@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background: #212121;
+    --primaryColor: #494a54;
+
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+main{
+    flex-direction: column;
+    display: flex;
+    height: 90vh;
+    width: 80%;
+    gap: 8px;
+}
+
+section {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: auto;
+    display: flex;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+}
+
+section span {
+    font-size: 20px;
+}
+
+form {
+    border: 1px solid var(--primaryColor);
+    justify-content: space-between;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px;
+    height: 10vh;
+    width: 100%;
+}
+
+input {
+    background-color: transparent;
+    padding: 6px;
+    color: #fff;
+    border: none;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+button i {
+    font-size: 20px;
+}
+
+.disabled-button{
+    color: var(--primaryColor);
+}
+
+.able-button {
+    cursor: pointer;
+    color: #fff;
+}
+
+.image-name{
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.image-name i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.image-name h4{
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.message-p{
+    padding-bottom: 6px;
+    padding-left: 8px;
+}
+
+main.empty {
+    justify-content: center;
+    align-items: center;
+}
+
+
+main.empty section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.incial-message {
+    color: #b5b5b5;
+    font-size: 22px;
+    font-weight: 500;
+}
